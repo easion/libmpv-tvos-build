@@ -3,8 +3,13 @@ let
   archs = import ../constants/archs.nix;
 in
 [
-  {
+/*  {
     os = oses.ios;
+    arch = archs.universal;
+  }
+*/
+  {
+    os = oses.tvos;
     arch = archs.universal;
   }
   {

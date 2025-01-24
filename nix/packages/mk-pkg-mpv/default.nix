@@ -48,6 +48,7 @@ let
     cd $src
     patch -p1 <${../../../patches/mpv-fix-missing-objc.patch}
     patch -p1 <${../../../patches/mpv-mix-with-others.patch}
+    patch -p1 <${../../../patches/mpv-tvos.patch}
     if [ "${variant}" == "${variants.audio}" ]; then
       patch -p1 <${../../../patches/mpv-remove-libass.patch}
     fi
@@ -237,6 +238,17 @@ pkgs.stdenvNoCC.mkDerivation {
       -Dios-gl=enabled `# iOS OpenGL ES hardware decoding interop support`
     )
 
+
+    TVOS_OPTIONS=(
+      `# audio output features`
+      -Daudiounit=enabled `# AudioUnit output for iOS`
+    )
+
+    TVOS_VIDEO_OPTIONS=(
+      `# hwaccel features`
+      -Dios-gl=enabled `# iOS OpenGL ES hardware decoding interop support`
+    )
+
     OPTIONS=("''${DISABLE_ALL_OPTIONS[@]}")
 
     OPTIONS+=("''${COMMON_OPTIONS[@]}")
@@ -253,6 +265,11 @@ pkgs.stdenvNoCC.mkDerivation {
       OPTIONS+=("''${IOS_OPTIONS[@]}")
       if [ "${variant}" == "${variants.video}" ]; then
         OPTIONS+=("''${IOS_VIDEO_OPTIONS[@]}")
+      fi
+    elif [ "${os}" == "${oses.tvos}" ]; then
+      OPTIONS+=("''${TVOS_OPTIONS[@]}")
+      if [ "${variant}" == "${variants.video}" ]; then
+        OPTIONS+=("''${TVOS_VIDEO_OPTIONS[@]}")
       fi
     fi
 

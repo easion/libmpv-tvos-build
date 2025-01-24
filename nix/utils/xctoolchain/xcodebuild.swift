@@ -139,17 +139,28 @@ func getPlatformAndVariant(usingVtoolFor binaryPath: String, architectures: [Str
     let data = pipe.fileHandleForReading.readDataToEndOfFile()
     let output = String(data: data, encoding: .utf8) ?? ""
 
+
+    // 打印调试信息
+    print("=== Debug Information ===")
+    print("Architecture: \(architecture)")
+    print("vtool Output: \(output)")
+    print("=========================")
+
     if output.contains("IOSSIMULATOR")
       || (output.contains("LC_VERSION_MIN_IPHONEOS") && architecture == "x86_64")
     {
       return ("ios", "simulator")
     } else if output.contains("LC_VERSION_MIN_IPHONEOS") && architecture == "arm64" {
       return ("ios", nil)
+    } else if output.contains("TVOS") && architecture == "x86_64" {
+      return ("tvos", "simulator")
+    } else if output.contains("TVOS") && architecture == "arm64" {
+      return ("tvos", nil)
     } else if output.contains("LC_VERSION_MIN_MACOSX") || output.contains("MACOS") {
       return ("macos", nil)
     }
   }
-  return ("unknown", nil)
+  return ("appletvos", nil)
 }
 
 // Generate a unique identifier for the framework based on platform, architectures, and variant

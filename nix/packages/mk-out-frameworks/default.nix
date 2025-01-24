@@ -62,6 +62,9 @@ pkgs.stdenvNoCC.mkDerivation {
     elif [ ${os} == ${oses.ios} ] || [ ${os} == ${oses.iossimulator} ]; then
       export INFO_PLIST_PATH=${./ios/Info.plist}
       ${buildIOSScript}
+    elif [ ${os} == ${oses.tvos} ]; then
+      export INFO_PLIST_PATH=${./ios/Info.plist}
+      ${buildIOSScript}
     else
       echo "Error: Unsupported os ${os}"
       exit 1

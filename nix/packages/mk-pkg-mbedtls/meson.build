@@ -19,6 +19,8 @@ options.add_cmake_defines({
     'CMAKE_CXX_COMPILER_WORKS': true,
     'USE_STATIC_MBEDTLS_LIBRARY': false,
     'USE_SHARED_MBEDTLS_LIBRARY': true,
+    'ENABLE_PROGRAMS': false,
+    'ENABLE_TESTING': false,
     'LINK_WITH_PTHREAD': true,
 })
 

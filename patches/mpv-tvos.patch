@@ -1,0 +1,35 @@
+diff --git a/osdep/subprocess-posix.c b/osdep/subprocess-posix.c
+index 013ca14..077232d 100644
+--- a/osdep/subprocess-posix.c
++++ b/osdep/subprocess-posix.c
+@@ -31,6 +31,22 @@
+ #include "osdep/io.h"
+ #include "stream/stream.h"
+ 
++
++#ifdef __APPLE__
++#include <TargetConditionals.h>
++#endif
++
++#ifdef TARGET_OS_TV
++
++void mp_subprocess2(struct mp_subprocess_opts *opts,
++                    struct mp_subprocess_result *res)
++{
++    *res = (struct mp_subprocess_result){.error = MP_SUBPROCESS_EUNSUPPORTED};
++}
++
++#else
++
++
+ extern char **environ;
+ 
+ #ifdef SIGRTMAX
+@@ -344,3 +360,7 @@ done:
+         res->error = MP_SUBPROCESS_EGENERIC;
+     }
+ }
++
++#endif
++
++
