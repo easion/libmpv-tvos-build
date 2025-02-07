@@ -23,61 +23,6 @@ $ tree result
 <details>
 <summary>result</summary>
 
-```shell
-├── libmpv-libs_v0.0.1_ios-arm64-audio-default.tar.gz
-├── libmpv-libs_v0.0.1_ios-arm64-audio-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_ios-arm64-audio-full.tar.gz
-├── libmpv-libs_v0.0.1_ios-arm64-video-default.tar.gz
-├── libmpv-libs_v0.0.1_ios-arm64-video-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_ios-arm64-video-full.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-amd64-audio-default.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-amd64-audio-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-amd64-audio-full.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-amd64-video-default.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-amd64-video-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-amd64-video-full.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-arm64-audio-default.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-arm64-audio-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-arm64-audio-full.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-arm64-video-default.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-arm64-video-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-arm64-video-full.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-universal-audio-default.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-universal-audio-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-universal-audio-full.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-universal-video-default.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-universal-video-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_iossimulator-universal-video-full.tar.gz
-├── libmpv-libs_v0.0.1_macos-amd64-audio-default.tar.gz
-├── libmpv-libs_v0.0.1_macos-amd64-audio-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_macos-amd64-audio-full.tar.gz
-├── libmpv-libs_v0.0.1_macos-amd64-video-default.tar.gz
-├── libmpv-libs_v0.0.1_macos-amd64-video-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_macos-amd64-video-full.tar.gz
-├── libmpv-libs_v0.0.1_macos-arm64-audio-default.tar.gz
-├── libmpv-libs_v0.0.1_macos-arm64-audio-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_macos-arm64-audio-full.tar.gz
-├── libmpv-libs_v0.0.1_macos-arm64-video-default.tar.gz
-├── libmpv-libs_v0.0.1_macos-arm64-video-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_macos-arm64-video-full.tar.gz
-├── libmpv-libs_v0.0.1_macos-universal-audio-default.tar.gz
-├── libmpv-libs_v0.0.1_macos-universal-audio-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_macos-universal-audio-full.tar.gz
-├── libmpv-libs_v0.0.1_macos-universal-video-default.tar.gz
-├── libmpv-libs_v0.0.1_macos-universal-video-encodersgpl.tar.gz
-├── libmpv-libs_v0.0.1_macos-universal-video-full.tar.gz
-├── libmpv-xcframeworks_v0.0.1_ios-universal-audio-default.tar.gz
-├── libmpv-xcframeworks_v0.0.1_ios-universal-audio-encodersgpl.tar.gz
-├── libmpv-xcframeworks_v0.0.1_ios-universal-audio-full.tar.gz
-├── libmpv-xcframeworks_v0.0.1_ios-universal-video-default.tar.gz
-├── libmpv-xcframeworks_v0.0.1_ios-universal-video-encodersgpl.tar.gz
-├── libmpv-xcframeworks_v0.0.1_ios-universal-video-full.tar.gz
-├── libmpv-xcframeworks_v0.0.1_macos-universal-audio-default.tar.gz
-├── libmpv-xcframeworks_v0.0.1_macos-universal-audio-encodersgpl.tar.gz
-├── libmpv-xcframeworks_v0.0.1_macos-universal-audio-full.tar.gz
-├── libmpv-xcframeworks_v0.0.1_macos-universal-video-default.tar.gz
-├── libmpv-xcframeworks_v0.0.1_macos-universal-video-encodersgpl.tar.gz
-└── libmpv-xcframeworks_v0.0.1_macos-universal-video-full.tar.gz
 ```
 </details>
 

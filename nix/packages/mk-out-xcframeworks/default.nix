@@ -24,7 +24,7 @@ let
     if os == oses.ios then
       [
         (callPackage ../mk-out-frameworks/default.nix { os = oses.ios; })
-        #(callPackage ../mk-out-frameworks/default.nix { os = oses.iossimulator; })
+        (callPackage ../mk-out-frameworks/default.nix { os = oses.iossimulator; })
       ]
     else if os == oses.tvos then
       [
