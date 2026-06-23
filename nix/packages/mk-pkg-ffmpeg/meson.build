@@ -138,7 +138,16 @@ audio_default_options = [
     '--enable-demuxer=xwma',
     '--enable-demuxer=dsf',
     '--enable-demuxer=dts',
+
+    #dpp added
     '--enable-demuxer=truehd',
+    '--enable-decoder=truehd',
+    '--enable-encoder=aac',
+    '--enable-muxer=spdif',
+    '--enable-encoder=ac3,eac3,truehd',
+    '--enable-decoder=ac3,eac3,truehd',
+    '--enable-parser=ac3,eac3,truehd',
+    '--enable-bsf=truehd_core',
 
     # protocols
     '--enable-protocol=async',

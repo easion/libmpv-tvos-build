@@ -8,7 +8,7 @@
 
 let
   name = "xcframeworks";
-  version = import ../../utils/default/version.nix;
+  version = import ../../utils/version/default.nix { inherit pkgs; };
   pname = import ../../utils/name/output.nix name;
   oses = import ../../utils/constants/oses.nix;
   callPackage = pkgs.lib.callPackageWith {
@@ -25,10 +25,6 @@ let
       [
         (callPackage ../mk-out-frameworks/default.nix { os = oses.ios; })
         (callPackage ../mk-out-frameworks/default.nix { os = oses.iossimulator; })
-      ]
-    else if os == oses.tvos then
-      [
-        (callPackage ../mk-out-frameworks/default.nix { os = oses.tvos; })
       ]
     else if os == oses.macos then
       [

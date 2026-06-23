@@ -3,21 +3,15 @@ let
   archs = import ../constants/archs.nix;
 in
 [
-
   {
-    os = oses.tvos;
-    arch = archs.arm64;
-  }
-
-   {
     os = oses.ios;
     arch = archs.arm64;
-  } 
+  }
   {
     os = oses.iossimulator;
     arch = archs.arm64;
   }
- {
+  {
     os = oses.iossimulator;
     arch = archs.amd64;
   }
@@ -25,14 +19,13 @@ in
     os = oses.iossimulator;
     arch = archs.universal;
   }
-/*  {
-    os = oses.macos;
-    arch = archs.amd64;
-  }
-  */
   {
     os = oses.macos;
     arch = archs.arm64;
+  }
+  {
+    os = oses.macos;
+    arch = archs.amd64;
   }
   {
     os = oses.macos;

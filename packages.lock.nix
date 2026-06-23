@@ -5,14 +5,14 @@
     sha256 = "a4003623cdc0109dec3aac8435520aa3fb12c4d69454fa227f2658cdb6dab5fa";
   };
   ffmpeg = {
-    version = "6.0";
-    url = "https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz";
-    sha256 = "57be87c22d9b49c112b6d24bc67d42508660e6b718b3db89c44e47e289137082";
+    version = "7.1";
+    url = "https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz";
+    sha256 = "40973d44970dbc83ef302b0609f2e74982be2d85916dd2ee7472d30678a7abe6";
   };
   fftools-ffi = {
-    version = "106d5813";
-    url = "https://github.com/moffatman/fftools-ffi/archive/106d58138071eba66c7d814f6573029c712cd597.tar.gz";
-    sha256 = "4577bb410978f5026270390aa65ebf0307250f3f5b0adf5353e060a5a3f4ee25";
+    version = "9b0d4da0";
+    url = "https://github.com/moffatman/fftools-ffi/archive/9b0d4da026d9c830702ec043c1f1f98d407025af.tar.gz";
+    sha256 = "mgf3ddt3yjmYBd2D0WeEnhgxKNjrEbjYnDx2t4YCfU8=";
   };
   freetype = {
     version = "2.13.2";
@@ -25,9 +25,9 @@
     sha256 = "7fa16c80c81bd622f7b198d31356da139cc318a63fc7761217af4130903f54a2";
   };
   harfbuzz = {
-    version = "8.1.1";
-    url = "https://github.com/harfbuzz/harfbuzz/archive/8.1.1.tar.gz";
-    sha256 = "b16e6bc0fc7e6a218583f40c7d201771f2e3072f85ef6e9217b36c1dc6b2aa25";
+    version = "8.4.0";
+    url = "https://github.com/harfbuzz/harfbuzz/archive/8.4.0.tar.gz";
+    sha256 = "9f1ca089813b05944ad1ce8c7e018213026d35dc9bab480a21eb876838396556";
   };
   libass = {
     version = "0.17.1";
@@ -40,9 +40,9 @@
     sha256 = "0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664";
   };
   libpng = {
-    version = "1.6.40";
-    url = "https://github.com/pnggroup/libpng/archive/v1.6.40.tar.gz";
-    sha256 = "62d25af25e636454b005c93cae51ddcd5383c40fa14aa3dae8f6576feb5692c2";
+    version = "1.6.58";
+    url = "https://github.com/pnggroup/libpng/archive/v1.6.58.tar.gz";
+    sha256 = "a9d4df463d36a6e5f9c29bd6f4967312d17e996c1854f3511f833924eb1993cf";
   };
   libpngPatch = {
     version = "1.6.40-1";
@@ -74,13 +74,21 @@
     url = "https://github.com/Mbed-TLS/mbedtls/archive/refs/tags/v3.4.1.tar.gz";
     sha256 = "a420fcf7103e54e775c383e3751729b8fb2dcd087f6165befd13f28315f754f5";
   };
+
+  libplacebo = {
+    version = "7.360.0";
+    url = "https://817827.xyz/libplacebo-7.360.0.tar.gz";
+    sha256 = "c4c70d430083915a157cb790660749649f58fee1e946c0a6e554fd1cba5a2e8f";
+  };
+  libbluray = {
+    version = "1.4.0";
+    url = "https://download.videolan.org/pub/videolan/libbluray/1.4.0/libbluray-1.4.0.tar.xz";
+    sha256 = "77937baf07eadda4b2b311cf3af4c50269d2ea3165041f5843d96476c4c92777";
+  };
   mpv = {
-    #version = "0.39.0";
-    #url = "https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz";
-    #sha256 = "2ca92437affb62c2b559b4419ea4785c70d023590500e8a52e95ea3ab4554683";
-    version = "0.36.0";
-    url = "https://github.com/mpv-player/mpv/archive/refs/tags/v0.36.0.tar.gz";
-    sha256 = "29abc44f8ebee013bb2f9fe14d80b30db19b534c679056e4851ceadf5a5e8bf6";
+    version = "0.41.0";
+    url = "https://817827.xyz/wv0.41.0.tar.gz";
+    sha256 = "ccb4f3e559960a1ffe8a0102472f26a8c6baf1d10218abd8572b3aa227e5812d";
   };
   uchardet = {
     version = "0.0.8";

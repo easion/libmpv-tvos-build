@@ -4,7 +4,7 @@
 
 let
   name = "all";
-  version = import ../../utils/default/version.nix;
+  version = import ../../utils/version/default.nix { inherit pkgs; };
 
   pname = import ../../utils/name/output.nix name;
   flavors = import ../../utils/default/flavors.nix;
@@ -48,7 +48,10 @@ pkgs.stdenvNoCC.mkDerivation {
     ARCHIVES="${pkgs.lib.concatStringsSep " " archives}"
     for ARCHIVE in $ARCHIVES; do
       echo $ARCHIVE
-      cp --no-preserve=mode $ARCHIVE/*.tar.gz build/
+      cp --no-preserve=mode \
+        $ARCHIVE/*.tar.gz \
+        $ARCHIVE/*.zip \
+        build/
     done
   '';
   installPhase = ''

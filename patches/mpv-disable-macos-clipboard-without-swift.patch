@@ -1,0 +1,16 @@
+diff --git a/meson.build b/meson.build
+--- a/meson.build
++++ b/meson.build
+@@ -166,8 +166,10 @@ if features['cocoa']
+     path_source += files('osdep/path-mac.m')
+     sources += files('osdep/language-mac.c',
+                      'osdep/utils-mac.c',
+-                     'osdep/mac/app_bridge.m',
+-                     'player/clipboard/clipboard-mac.m')
++                     'osdep/mac/app_bridge.m')
++    if get_option('swift-build').enabled()
++        sources += files('player/clipboard/clipboard-mac.m')
++    endif
+     main_fn_source = files('osdep/main-fn-mac.c')
+ endif
+ 
