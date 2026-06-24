@@ -41,3 +41,11 @@ daemon:
 
 repair:
 	sudo nix-store --verify --check-contents --repair
+
+clean:
+	find . -maxdepth 1 -type l -name 'result*' -delete
+	nix-store --gc --print-dead
+	nix-collect-garbage
+	nix-collect-garbage --delete-older-than 14d
+	du -sh /nix/store
+

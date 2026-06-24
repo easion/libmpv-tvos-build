@@ -50,6 +50,8 @@ if arch != archs.universal then
     libpng = callPackage ../mk-pkg-libpng/default.nix { };
     libvpx = callPackage ../mk-pkg-libvpx/default.nix { };
     libx264 = callPackage ../mk-pkg-libx264/default.nix { };
+    libbluray = callPackage ../mk-pkg-libbluray/default.nix { };
+    libplacebo = callPackage ../mk-pkg-libplacebo/default.nix { };
 
     deps =
       [
@@ -71,6 +73,8 @@ if arch != archs.universal then
         fribidi
         freetype
         libpng
+	libplacebo
+	libbluray
       ]
       ++ pkgs.lib.optionals (variant == variants.video && flavor == flavors.encodersgpl) [
         libvpx
